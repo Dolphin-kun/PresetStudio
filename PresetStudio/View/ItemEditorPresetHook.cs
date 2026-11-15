@@ -172,6 +172,9 @@ namespace PresetStudio.View
 
             if (e.PropertyName is nameof(PresetStudioSettings.ItemEditorFolder) or nameof(PresetStudioSettings.ItemEditorShowFolders))
                 RebuildPresets();
+
+            if (e.PropertyName is nameof(PresetStudioSettings.ShowInItemEditor))
+                Update();
         }
 
         private void Preset_PropertyChanged(object? sender, PropertyChangedEventArgs e)
@@ -284,7 +287,7 @@ namespace PresetStudio.View
 
         private FrameworkElement? FindTextGroupContent()
         {
-            if (!view.IsVisible || view.DataContext is not ItemEditorViewModel viewModel)
+            if (!Settings.ShowInItemEditor || !view.IsVisible || view.DataContext is not ItemEditorViewModel viewModel)
                 return null;
 
             var items = viewModel.Items.Value;

@@ -241,5 +241,6 @@
 <data name="SplitModeCharacter" xml:space="preserve"><value>한 글자씩</value></data>
 <data name="SplitModeLine" xml:space="preserve"><value>한 줄씩</value></data>
 <data name="SplitSummary" xml:space="preserve"><value>아이템 {0}개로 분할합니다</value></data>
+<data name="ShowInItemEditor" xml:space="preserve"><value>아이템 패널에 표시</value></data>
 <data name="SplitAddBoundaryHint" xml:space="preserve"><value>구분 위치를 추가하세요</value></data>
 </root>

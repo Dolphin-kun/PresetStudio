@@ -362,7 +362,7 @@ namespace PresetStudio.ViewModel
             RebuildEntries();
         }
 
-        private void Rename(IPreviewItem entry)
+        private static void Rename(IPreviewItem entry)
         {
             if (NameInputViewModel.Show(Texts.Rename, Texts.NameLabel, [], initialName: GetName(entry)) is not { Name: var name })
                 return;

@@ -59,7 +59,7 @@ namespace PresetStudio.ViewModel
 
         public bool IsPreviewTextEditable { get; }
 
-        public string PreviewTextPlaceHolder => string.Format(Texts.PreviewTextDefault, PresetStudio.Settings.PresetStudioSettings.Default.PreviewText);
+        public string PreviewTextPlaceHolder { get; } = string.Format(Texts.PreviewTextDefault, PresetStudio.Settings.PresetStudioSettings.Default.PreviewText);
 
         private string previewText = string.Empty;
         public string PreviewText { get => previewText; set => Set(ref previewText, value ?? string.Empty); }

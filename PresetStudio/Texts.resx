@@ -241,5 +241,6 @@
 <data name="SplitModeCharacter" xml:space="preserve"><value>1文字ずつ</value></data>
 <data name="SplitModeLine" xml:space="preserve"><value>1行ずつ</value></data>
 <data name="SplitSummary" xml:space="preserve"><value>{0} 個のアイテムに分割します</value></data>
+<data name="ShowInItemEditor" xml:space="preserve"><value>アイテム欄に表示</value></data>
 <data name="SplitAddBoundaryHint" xml:space="preserve"><value>区切り位置を追加してください</value></data>
 </root>

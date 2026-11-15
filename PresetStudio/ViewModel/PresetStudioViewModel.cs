@@ -1144,7 +1144,7 @@ namespace PresetStudio.ViewModel
             TemplateWarning = messages.Count == 0 ? null : string.Join(Environment.NewLine, messages);
         }
 
-        private void RestoreTemplates()
+        private static void RestoreTemplates()
         {
             var settings = SettingsBase<ItemSettings>.Default;
             var candidates = TemplateBackupStore.FindRestorableTemplates(settings.Templates);

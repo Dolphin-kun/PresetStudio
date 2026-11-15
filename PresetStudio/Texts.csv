@@ -181,4 +181,5 @@ SplitModeBoundaries,,区切り位置で分割,Split at markers,按拆分点拆�
 SplitModeCharacter,,1文字ずつ,Each character,逐字,逐字,한 글자씩,Cada carácter,كل حرف,Per karakter,
 SplitModeLine,,1行ずつ,Each line,逐行,逐行,한 줄씩,Cada línea,كل سطر,Per baris,
 SplitSummary,0: count,{0} 個のアイテムに分割します,Splits into {0} items,将拆分为 {0} 个项目,將分割為 {0} 個項目,아이템 {0}개로 분할합니다,Se dividirá en {0} elementos,سيتم التقسيم إلى {0} عناصر,Akan dipisah menjadi {0} item,
+ShowInItemEditor,,アイテム欄に表示,Show in item panel,在项目面板中显示,在項目面板中顯示,아이템 패널에 표시,Mostrar en el panel de elementos,العرض في لوحة العناصر,Tampilkan di panel item,
 SplitAddBoundaryHint,,区切り位置を追加してください,Add split markers,请添加拆分点,請新增分割點,구분 위치를 추가하세요,Añade marcas de división,أضف علامات التقسيم,Tambahkan penanda pisah,

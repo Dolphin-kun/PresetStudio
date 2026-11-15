@@ -241,5 +241,6 @@
 <data name="SplitModeCharacter" xml:space="preserve"><value>Per karakter</value></data>
 <data name="SplitModeLine" xml:space="preserve"><value>Per baris</value></data>
 <data name="SplitSummary" xml:space="preserve"><value>Akan dipisah menjadi {0} item</value></data>
+<data name="ShowInItemEditor" xml:space="preserve"><value>Tampilkan di panel item</value></data>
 <data name="SplitAddBoundaryHint" xml:space="preserve"><value>Tambahkan penanda pisah</value></data>
 </root>

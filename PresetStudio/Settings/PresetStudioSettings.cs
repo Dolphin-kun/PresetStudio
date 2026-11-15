@@ -41,6 +41,9 @@ namespace PresetStudio.Settings
         private bool keepFontSize = true;
         public bool KeepFontSize { get => keepFontSize; set => Set(ref keepFontSize, value); }
 
+        private bool showInItemEditor = true;
+        public bool ShowInItemEditor { get => showInItemEditor; set => Set(ref showInItemEditor, value); }
+
         private bool itemEditorShowFolders;
         public bool ItemEditorShowFolders { get => itemEditorShowFolders; set => Set(ref itemEditorShowFolders, value); }
 

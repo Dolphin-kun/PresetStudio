@@ -23,7 +23,7 @@ namespace PresetStudio.Model
         public bool IsDefault { get; init; }
 
         [JsonIgnore]
-        public string GroupLabel => Texts.FaceGroup;
+        public string GroupLabel { get; } = Texts.FaceGroup;
 
         private BitmapSource? previewImage;
         [JsonIgnore]
@@ -40,7 +40,7 @@ namespace PresetStudio.Model
         public TachieItem Item { get; set; } = new();
 
         [JsonIgnore]
-        public string GroupLabel => Texts.TachieItemGroup;
+        public string GroupLabel { get; } = Texts.TachieItemGroup;
 
         private BitmapSource? previewImage;
         [JsonIgnore]

@@ -39,7 +39,7 @@ namespace PresetStudio.Model
             try
             {
                 if (face is IPsdTachieParameter && character.TachieCharacterParameter is PsdTachieCharacterParameter { FilePath: { } psdPath } && File.Exists(psdPath))
-                    return await CreatePsdOptionsAsync(character, face, psdPath);
+                    return await CreatePsdOptionsAsync(face, psdPath);
 
                 if (face.GetType().FullName == AnimationFaceTypeName)
                     return await Task.Run(() => CreateAnimationOptions(character, face));
@@ -98,7 +98,7 @@ namespace PresetStudio.Model
             return fileType.HasFlag(FileType.画像) || fileType.HasFlag(FileType.動画);
         }
 
-        private static async Task<List<FacePartOption>> CreatePsdOptionsAsync(Character character, ITachieFaceParameter face, string psdPath)
+        private static async Task<List<FacePartOption>> CreatePsdOptionsAsync(ITachieFaceParameter face, string psdPath)
         {
             var tree = await Task.Run(() => LoadPsdTree(psdPath));
             var result = new List<FacePartOption>();

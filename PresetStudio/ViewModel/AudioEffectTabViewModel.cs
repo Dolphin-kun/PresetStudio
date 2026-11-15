@@ -343,7 +343,7 @@ namespace PresetStudio.ViewModel
             PresetStudioSettings.Default.Save();
         }
 
-        private void EditTemplate(AudioEffectPreset? preset)
+        private static void EditTemplate(AudioEffectPreset? preset)
         {
             if (preset is not { IsUserTemplate: true } || NameInputViewModel.Show(Texts.EditAudioEffectTemplate, Texts.TemplateName, [], initialName: preset.Name) is not { Name: var name })
                 return;
@@ -352,7 +352,7 @@ namespace PresetStudio.ViewModel
             PresetStudioSettings.Default.Save();
         }
 
-        private void DeleteTemplates(IReadOnlyList<AudioEffectPreset> effects)
+        private static void DeleteTemplates(IReadOnlyList<AudioEffectPreset> effects)
         {
             var targets = effects.Where(effect => effect.IsUserTemplate).ToList();
             if (targets.Count == 0)

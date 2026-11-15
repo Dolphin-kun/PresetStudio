@@ -620,6 +620,10 @@
                                       IsChecked="{Binding IsPreviewOnly}"
                                       ToolTip="{x:Static ps:Texts.PreviewOnly}"
                                       Content="{DynamicResource {x:Static icons:IconKeys.ViewGrid}}" />
+                        <ToggleButton x:Name="ShowInItemEditorToggle"
+                                      Style="{StaticResource ToolBarToggleButtonStyle}"
+                                      ToolTip="{x:Static ps:Texts.ShowInItemEditor}"
+                                      Content="{DynamicResource {x:Static icons:IconKeys.PageLayoutHeader}}" />
                         <Separator />
                         <view:SearchBox Text="{Binding PresetSearchText}" />
                     </ToolBar>

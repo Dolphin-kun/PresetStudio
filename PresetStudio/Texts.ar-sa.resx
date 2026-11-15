@@ -241,5 +241,6 @@
 <data name="SplitModeCharacter" xml:space="preserve"><value>كل حرف</value></data>
 <data name="SplitModeLine" xml:space="preserve"><value>كل سطر</value></data>
 <data name="SplitSummary" xml:space="preserve"><value>سيتم التقسيم إلى {0} عناصر</value></data>
+<data name="ShowInItemEditor" xml:space="preserve"><value>العرض في لوحة العناصر</value></data>
 <data name="SplitAddBoundaryHint" xml:space="preserve"><value>أضف علامات التقسيم</value></data>
 </root>

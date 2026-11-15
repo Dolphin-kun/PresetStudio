@@ -241,5 +241,6 @@
 <data name="SplitModeCharacter" xml:space="preserve"><value>逐字</value></data>
 <data name="SplitModeLine" xml:space="preserve"><value>逐行</value></data>
 <data name="SplitSummary" xml:space="preserve"><value>将拆分为 {0} 个项目</value></data>
+<data name="ShowInItemEditor" xml:space="preserve"><value>在项目面板中显示</value></data>
 <data name="SplitAddBoundaryHint" xml:space="preserve"><value>请添加拆分点</value></data>
 </root>

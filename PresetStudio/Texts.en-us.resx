@@ -241,5 +241,6 @@
 <data name="SplitModeCharacter" xml:space="preserve"><value>Each character</value></data>
 <data name="SplitModeLine" xml:space="preserve"><value>Each line</value></data>
 <data name="SplitSummary" xml:space="preserve"><value>Splits into {0} items</value></data>
+<data name="ShowInItemEditor" xml:space="preserve"><value>Show in item panel</value></data>
 <data name="SplitAddBoundaryHint" xml:space="preserve"><value>Add split markers</value></data>
 </root>

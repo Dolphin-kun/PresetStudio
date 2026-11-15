@@ -25,6 +25,7 @@ namespace PresetStudio.View
             InitializeComponent();
             KeepFontToggle.SetBinding(ToggleButton.IsCheckedProperty, new Binding(nameof(PresetStudioSettings.KeepFont)) { Source = PresetStudioSettings.Default, Mode = BindingMode.TwoWay });
             KeepFontSizeToggle.SetBinding(ToggleButton.IsCheckedProperty, new Binding(nameof(PresetStudioSettings.KeepFontSize)) { Source = PresetStudioSettings.Default, Mode = BindingMode.TwoWay });
+            ShowInItemEditorToggle.SetBinding(ToggleButton.IsCheckedProperty, new Binding(nameof(PresetStudioSettings.ShowInItemEditor)) { Source = PresetStudioSettings.Default, Mode = BindingMode.TwoWay });
 
             dragStarter = new DragStarter(this, entry => DataContext is PresetStudioViewModel ? PresetStudioViewModel.CreateDragData(entry) : null);
             dragStarter.DragFinished += () =>
