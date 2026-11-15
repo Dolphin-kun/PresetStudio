@@ -1,0 +1,71 @@
+<Window x:Class="PresetStudio.View.TemplateFieldsWindow"
+        x:ClassModifier="internal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ps="clr-namespace:PresetStudio"
+        xmlns:loc="clr-namespace:YukkuriMovieMaker.Resources.Localization;assembly=YukkuriMovieMaker.Plugin"
+        Title="{x:Static ps:Texts.SetInputFields}"
+        Width="420"
+        MaxHeight="600"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+        Foreground="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}">
+    <Window.Style>
+        <Style TargetType="Window" BasedOn="{StaticResource {x:Type Window}}" />
+    </Window.Style>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="26" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Margin="6,6,6,4"
+                   TextWrapping="Wrap"
+                   Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"
+                   Text="{x:Static ps:Texts.TemplateFieldsHelp}" />
+
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding Options}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Height="26">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="140" />
+                            </Grid.ColumnDefinitions>
+                            <CheckBox Grid.Column="0"
+                                      Margin="6,0,4,0"
+                                      VerticalAlignment="Center"
+                                      IsChecked="{Binding IsUsed}">
+                                <TextBlock Text="{Binding Description}"
+                                           TextTrimming="CharacterEllipsis" />
+                            </CheckBox>
+                            <TextBox Grid.Column="1"
+                                     VerticalContentAlignment="Center"
+                                     IsEnabled="{Binding IsUsed}"
+                                     Text="{Binding Label, UpdateSourceTrigger=PropertyChanged}" />
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="2"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+            <Button Width="100"
+                    Content="{x:Static loc:Texts.OKButtonContent}"
+                    Click="OkButton_Click" />
+            <Button Width="100"
+                    Content="{x:Static loc:Texts.CancelButtonContent}"
+                    IsCancel="True" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+
+    <Version>1.0.0</Version>
+
+    <RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\'))</RepoRoot>
+    <PathMap>$(RepoRoot)=.</PathMap>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="NAudio">
+      <HintPath>$(YMM4DirPath)NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Core">
+      <HintPath>$(YMM4DirPath)NAudio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinMM">
+      <HintPath>$(YMM4DirPath)NAudio.WinMM.dll</HintPath>
+    </Reference>
+    <Reference Include="YukkuriMovieMaker">
+      <HintPath>$(YMM4DirPath)YukkuriMovieMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="YukkuriMovieMaker.Controls">
+      <HintPath>$(YMM4DirPath)YukkuriMovieMaker.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="YukkuriMovieMaker.Plugin">
+      <HintPath>$(YMM4DirPath)YukkuriMovieMaker.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortice.Direct2D1">
+      <HintPath>$(YMM4DirPath)Vortice.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortice.DirectX">
+      <HintPath>$(YMM4DirPath)Vortice.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortice.Mathematics">
+      <HintPath>$(YMM4DirPath)Vortice.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGen.Runtime">
+      <HintPath>$(YMM4DirPath)SharpGen.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGen.Runtime.COM">
+      <HintPath>$(YMM4DirPath)SharpGen.Runtime.COM.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(YMM4DirPath)Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PsdParser">
+      <HintPath>$(YMM4DirPath)PsdParser.dll</HintPath>
+    </Reference>
+    <Reference Include="YukkuriMovieMaker.Plugin.FileSource.Psd">
+      <HintPath>$(YMM4DirPath)YukkuriMovieMaker.Plugin.FileSource.Psd.dll</HintPath>
+    </Reference>
+    <Reference Include="YukkuriMovieMaker.Plugin.Tachie.Psd">
+      <HintPath>$(YMM4DirPath)YukkuriMovieMaker.Plugin.Tachie.Psd.dll</HintPath>
+    </Reference>
+    <Reference Include="YukkuriMovieMaker.Plugin.Tachie.AnimationTachie">
+      <HintPath>$(YMM4DirPath)YukkuriMovieMaker.Plugin.Tachie.AnimationTachie.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveProperty">
+      <HintPath>$(YMM4DirPath)ReactiveProperty.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveProperty.Core">
+      <HintPath>$(YMM4DirPath)ReactiveProperty.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YukkuriMovieMaker.Generator\YukkuriMovieMaker.Generator\YukkuriMovieMaker.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <AdditionalFiles Include="**/*.csv" />
+  </ItemGroup>
+
+  <Import Project="..\YukkuriMovieMaker.Generator\YukkuriMovieMaker.Generator.targets" />
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <PropertyGroup>
+      <PluginOutputDir>$(YMM4DirPath)user\plugin\$(ProjectName)\</PluginOutputDir>
+    </PropertyGroup>
+    <ItemGroup>
+      <SatelliteAssemblyOutput Include="$(TargetDir)**\$(TargetName).resources.dll" />
+    </ItemGroup>
+    <MakeDir Directories="$(PluginOutputDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PluginOutputDir)" ContinueOnError="WarnAndContinue" />
+    <Copy SourceFiles="@(SatelliteAssemblyOutput)" DestinationFiles="@(SatelliteAssemblyOutput->'$(PluginOutputDir)%(RecursiveDir)%(Filename)%(Extension)')" ContinueOnError="WarnAndContinue" />
+  </Target>
+
+</Project>

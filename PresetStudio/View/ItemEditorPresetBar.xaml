@@ -1,0 +1,238 @@
+<UserControl x:Class="PresetStudio.View.ItemEditorPresetBar"
+             x:ClassModifier="internal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ps="clr-namespace:PresetStudio"
+             xmlns:icons="clr-namespace:YukkuriMovieMaker.Resources.Icons;assembly=YukkuriMovieMaker.Plugin"
+             xmlns:controls="clr-namespace:YukkuriMovieMaker.Controls;assembly=YukkuriMovieMaker.Plugin"
+             xmlns:theme="clr-namespace:YukkuriMovieMaker.Theme;assembly=YukkuriMovieMaker.Plugin"
+             xmlns:localization="clr-namespace:YukkuriMovieMaker.Resources.Localization;assembly=YukkuriMovieMaker.Plugin"
+             xmlns:view="clr-namespace:PresetStudio.View"
+             Margin="0,2,0,4"
+             PreviewMouseDown="Bar_PreviewMouseDown">
+    <UserControl.Resources>
+        <Style x:Key="ToolBarButtonStyle"
+               TargetType="Button"
+               BasedOn="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+            <Setter Property="Width" Value="26" />
+            <Setter Property="Height" Value="26" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="ToolBarToggleButtonStyle"
+               TargetType="ToggleButton"
+               BasedOn="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+            <Setter Property="Width" Value="26" />
+            <Setter Property="Height" Value="26" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="FavoriteStarStyle" TargetType="controls:FavoriteButton">
+            <Setter Property="Width" Value="18" />
+            <Setter Property="Height" Value="18" />
+            <Setter Property="Margin" Value="2" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="ToolTip" Value="{x:Static localization:Texts.FavoriteButtonToolTip}" />
+            <Setter Property="Visibility" Value="Hidden" />
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="Visibility" Value="Visible" />
+                </Trigger>
+                <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource AncestorType=ListBoxItem}}" Value="True">
+                    <Setter Property="Visibility" Value="Visible" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="MenuIconStyle" TargetType="ContentControl">
+            <Setter Property="Width" Value="16" />
+            <Setter Property="Height" Value="16" />
+            <Setter Property="Focusable" Value="False" />
+        </Style>
+
+        <DataTemplate x:Key="PresetTemplate">
+            <Border Width="96"
+                    Margin="0,0,-1,0"
+                    BorderThickness="1"
+                    Background="Transparent"
+                    ToolTip="{Binding ToolTipText}">
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <Setter Property="BorderBrush" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsLinked}" Value="True">
+                                <Setter Property="BorderBrush" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
+                                <Setter Property="BorderThickness" Value="2" />
+                                <Setter Property="Panel.ZIndex" Value="1" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+                <Border.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="{x:Static ps:Texts.ApplyPartially}"
+                                  Loaded="PartMenu_Loaded">
+                                <MenuItem.Icon>
+                                    <ContentControl Style="{StaticResource MenuIconStyle}"
+                                                    Content="{DynamicResource {x:Static icons:IconKeys.FormatPaint}}" />
+                                </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator />
+                        <MenuItem Header="{x:Static ps:Texts.OverwriteWithSelected}"
+                                  Click="OverwriteMenuItem_Click">
+                                <MenuItem.Icon>
+                                    <ContentControl Style="{StaticResource MenuIconStyle}"
+                                                    Content="{DynamicResource {x:Static icons:IconKeys.ContentSaveEdit}}" />
+                                </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="{x:Static ps:Texts.ChangePreviewText}"
+                                  Click="PreviewTextMenuItem_Click">
+                                <MenuItem.Icon>
+                                    <ContentControl Style="{StaticResource MenuIconStyle}"
+                                                    Content="{DynamicResource {x:Static icons:IconKeys.FormatText}}" />
+                                </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="{x:Static ps:Texts.Duplicate}"
+                                  Click="DuplicateMenuItem_Click">
+                                <MenuItem.Icon>
+                                    <ContentControl Style="{StaticResource MenuIconStyle}"
+                                                    Content="{DynamicResource {x:Static icons:IconKeys.ContentCopy}}" />
+                                </MenuItem.Icon>
+                        </MenuItem>
+                    </ContextMenu>
+                </Border.ContextMenu>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="54" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Source="{Binding Current.PreviewImage}"
+                           Stretch="Uniform" />
+                    <controls:FavoriteButton Style="{StaticResource FavoriteStarStyle}"
+                                             IsChecked="{Binding IsFavorite}"
+                                             Click="FavoriteButton_Click" />
+                    <TextBlock Grid.Row="1"
+                               Text="{Binding DisplayName}"
+                               FontSize="11"
+                               HorizontalAlignment="Center"
+                               TextTrimming="CharacterEllipsis"
+                               Margin="2,0,2,2" />
+                </Grid>
+            </Border>
+        </DataTemplate>
+
+        <DataTemplate x:Key="FolderTemplate">
+            <Border Width="96"
+                    Margin="0,0,-1,0"
+                    BorderThickness="1"
+                    BorderBrush="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"
+                    Background="Transparent"
+                    ToolTip="{Binding Path}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="54" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <ContentControl Width="40"
+                                    Height="40"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Focusable="False"
+                                    Content="{DynamicResource {x:Static icons:IconKeys.Folder}}" />
+                    <TextBlock Grid.Row="1"
+                               Text="{Binding Name}"
+                               FontSize="11"
+                               HorizontalAlignment="Center"
+                               TextTrimming="CharacterEllipsis"
+                               Margin="2,0,2,2" />
+                </Grid>
+            </Border>
+        </DataTemplate>
+
+        <view:PresetEntryTemplateSelector x:Key="EntryTemplateSelector"
+                                          FolderTemplate="{StaticResource FolderTemplate}"
+                                          PresetTemplate="{StaticResource PresetTemplate}" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <ToolBarTray Grid.Row="0">
+            <ToolBar Height="26" Padding="0">
+                <Button Style="{StaticResource ToolBarButtonStyle}"
+                        ToolTip="{x:Static ps:Texts.Add}"
+                        Click="AddButton_Click"
+                        Content="{DynamicResource {x:Static icons:IconKeys.Plus}}" />
+                <Separator />
+                <ToggleButton x:Name="FolderToggle"
+                              Style="{StaticResource ToolBarToggleButtonStyle}"
+                              ToolTip="{x:Static ps:Texts.ShowFolders}"
+                              Click="FolderToggle_Click">
+                    <Grid>
+                        <ContentControl x:Name="FolderShownIcon"
+                                        Focusable="False"
+                                        Content="{DynamicResource {x:Static icons:IconKeys.FolderEye}}" />
+                        <Viewbox x:Name="FolderHiddenIcon"
+                                 Visibility="Collapsed"
+                                 Style="{DynamicResource {x:Static icons:IconKeys.ViewboxStyle}}">
+                            <Canvas Width="24" Height="24">
+                                <Path Fill="{DynamicResource {x:Static theme:YMM4Colors.IconBrushKey}}"
+                                      Data="M9.3,20L4,20C2.9,20,2,19.1,2,18L2,6C2,4.9,2.9,4,4,4L10,4 12,6 20,6C21.1,6,22,6.9,22,8L22,14.6C20.6,13.6 18.9,13 17,13 13.5,13 10.4,15.1 9.1,18.3L8.8,19 9.1,19.7C9.2,19.8,9.2,19.9,9.3,20Z" />
+                                <Path Stroke="{DynamicResource {x:Static theme:YMM4Colors.IconBrushKey}}"
+                                      StrokeThickness="1.5"
+                                      StrokeStartLineCap="Round"
+                                      StrokeEndLineCap="Round"
+                                      Data="M11.5,18 Q17,24 22.5,18" />
+                            </Canvas>
+                        </Viewbox>
+                    </Grid>
+                </ToggleButton>
+                <Button x:Name="UpButton"
+                        Style="{StaticResource ToolBarButtonStyle}"
+                        ToolTipService.ShowOnDisabled="True"
+                        Visibility="Collapsed"
+                        Click="UpButton_Click"
+                        Content="{DynamicResource {x:Static icons:IconKeys.FolderArrowUp}}" />
+                <Separator />
+                <ToggleButton x:Name="KeepFontToggle"
+                              Style="{StaticResource ToolBarToggleButtonStyle}"
+                              ToolTip="{x:Static ps:Texts.KeepFont}"
+                              Content="{DynamicResource {x:Static icons:IconKeys.FormatFont}}" />
+                <ToggleButton x:Name="KeepFontSizeToggle"
+                              Style="{StaticResource ToolBarToggleButtonStyle}"
+                              ToolTip="{x:Static ps:Texts.KeepFontSize}"
+                              Content="{DynamicResource {x:Static icons:IconKeys.FormatSize}}" />
+                <Separator />
+                <Button Style="{StaticResource ToolBarButtonStyle}"
+                        ToolTip="{x:Static ps:Texts.SplitText}"
+                        Click="SplitButton_Click"
+                        Content="{DynamicResource {x:Static icons:IconKeys.ContentCut}}" />
+            </ToolBar>
+        </ToolBarTray>
+        <ListBox x:Name="PresetList"
+                 Grid.Row="1"
+                 BorderThickness="0"
+                 Background="Transparent"
+                 Padding="0"
+                 SelectionMode="Single"
+                 ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                 ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                 VirtualizingPanel.IsVirtualizing="True"
+                 VirtualizingPanel.ScrollUnit="Pixel"
+                 Loaded="PresetList_Loaded"
+                 PreviewMouseLeftButtonDown="PresetList_PreviewMouseLeftButtonDown"
+                 PreviewMouseLeftButtonUp="PresetList_PreviewMouseLeftButtonUp"
+                 MouseDoubleClick="PresetList_MouseDoubleClick"
+                 PreviewMouseWheel="PresetList_PreviewMouseWheel"
+                 ItemTemplateSelector="{StaticResource EntryTemplateSelector}"
+                 ScrollViewer.ScrollChanged="PresetList_ScrollChanged">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+    </Grid>
+</UserControl>

@@ -1,0 +1,77 @@
+<Window x:Class="PresetStudio.View.TemplateInputWindow"
+        x:ClassModifier="internal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:YukkuriMovieMaker.Controls;assembly=YukkuriMovieMaker.Plugin"
+        xmlns:loc="clr-namespace:YukkuriMovieMaker.Resources.Localization;assembly=YukkuriMovieMaker.Plugin"
+        Width="380"
+        MaxHeight="640"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+        Foreground="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}">
+    <Window.Style>
+        <Style TargetType="Window" BasedOn="{StaticResource {x:Type Window}}" />
+    </Window.Style>
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="26" />
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0"
+                      VerticalScrollBarVisibility="Auto">
+            <ItemsControl x:Name="Rows"
+                          ItemsSource="{Binding Rows}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid MinHeight="26">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0"
+                                       Margin="6,5,4,0"
+                                       VerticalAlignment="Top"
+                                       TextTrimming="CharacterEllipsis"
+                                       Text="{Binding Label}"
+                                       ToolTip="{Binding Label}" />
+                            <TextBox Grid.Column="1"
+                                     MinHeight="26"
+                                     MaxHeight="120"
+                                     VerticalContentAlignment="Center"
+                                     AcceptsReturn="True"
+                                     TextWrapping="Wrap"
+                                     VerticalScrollBarVisibility="Auto"
+                                     Visibility="{Binding IsText, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                     Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}" />
+                            <controls:ColorPicker Grid.Column="1"
+                                                  Height="26"
+                                                  Visibility="{Binding IsColor, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                                  Value="{Binding Color}" />
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="1"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+            <Button Width="100"
+                    Content="{x:Static loc:Texts.OKButtonContent}"
+                    ToolTip="Ctrl+Enter"
+                    Click="OkButton_Click" />
+            <Button Width="100"
+                    Content="{x:Static loc:Texts.CancelButtonContent}"
+                    IsCancel="True" />
+        </StackPanel>
+    </Grid>
+</Window>

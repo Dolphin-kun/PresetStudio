@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>ja-jp</value></data>
+<data name="PluginName" xml:space="preserve"><value>プリセットスタジオ</value></data>
+<data name="Unnamed" xml:space="preserve"><value>(名前なし)</value></data>
+<data name="NoEffects" xml:space="preserve"><value>(エフェクトなし)</value></data>
+<data name="None" xml:space="preserve"><value>なし</value></data>
+<data name="Preset" xml:space="preserve"><value>プリセット</value></data>
+<data name="Uncategorized" xml:space="preserve"><value>未分類</value></data>
+<data name="CopyName" xml:space="preserve"><value>{0} のコピー</value></data>
+<data name="CopyNameNumbered" xml:space="preserve"><value>{0} のコピー ({1})</value></data>
+<data name="ConfirmOverwrite" xml:space="preserve"><value>「{0}」を上書きしますか？</value></data>
+<data name="BackupCurrentItems" xml:space="preserve"><value>現在はアイテム {0} 個</value></data>
+<data name="BackupCurrentNone" xml:space="preserve"><value>現在はありません</value></data>
+<data name="BackupDescription" xml:space="preserve"><value>{0} のバックアップ / アイテム {1} 個 / {2}</value></data>
+<data name="BackupMissingPlugins" xml:space="preserve"><value>読み込まれていないプラグインがあるため復元できません: {0}</value></data>
+<data name="User" xml:space="preserve"><value>ユーザー</value></data>
+<data name="FaceGroup" xml:space="preserve"><value>表情</value></data>
+<data name="TachieItemGroup" xml:space="preserve"><value>立ち絵アイテム</value></data>
+<data name="FontColor" xml:space="preserve"><value>文字色</value></data>
+<data name="StyleColor" xml:space="preserve"><value>装飾色</value></data>
+<data name="Text" xml:space="preserve"><value>テキスト</value></data>
+<data name="SplitChanged" xml:space="preserve"><value>分割中にアイテムが変更されたため、中止しました。</value></data>
+<data name="SplitFailed" xml:space="preserve"><value>文字の位置を計算できなかったため、分割できませんでした。</value></data>
+<data name="NewPreset" xml:space="preserve"><value>新しいプリセット</value></data>
+<data name="FolderLabel" xml:space="preserve"><value>フォルダ: {0}</value></data>
+<data name="Transitions" xml:space="preserve"><value>場面切り替え</value></data>
+<data name="TransitionGroup" xml:space="preserve"><value>場面切り替え / {0}</value></data>
+<data name="ApplyPartially" xml:space="preserve"><value>部分的に適用</value></data>
+<data name="OverwriteWithSelected" xml:space="preserve"><value>選択中のアイテムで上書き</value></data>
+<data name="ChangePreviewText" xml:space="preserve"><value>プレビュー文字を変更</value></data>
+<data name="Duplicate" xml:space="preserve"><value>複製</value></data>
+<data name="Add" xml:space="preserve"><value>追加</value></data>
+<data name="ShowFolders" xml:space="preserve"><value>フォルダを表示</value></data>
+<data name="HideFolders" xml:space="preserve"><value>フォルダを隠す</value></data>
+<data name="KeepFont" xml:space="preserve"><value>フォントを固定</value></data>
+<data name="KeepFontSize" xml:space="preserve"><value>サイズを固定</value></data>
+<data name="SplitText" xml:space="preserve"><value>テキストを分割</value></data>
+<data name="UpFolder" xml:space="preserve"><value>上のフォルダへ（現在: {0}）</value></data>
+<data name="TopFolder" xml:space="preserve"><value>トップ</value></data>
+<data name="AddPreset" xml:space="preserve"><value>プリセットを追加</value></data>
+<data name="AddPresets" xml:space="preserve"><value>プリセットを追加（{0} 件）</value></data>
+<data name="NameLabel" xml:space="preserve"><value>名前</value></data>
+<data name="ConfirmOverwriteWithSelected" xml:space="preserve"><value>「{0}」を選択中のアイテムで上書きしますか？</value></data>
+<data name="ConfirmUpdateLinked" xml:space="preserve"><value>「{0}」とリンクしている {1} 個のアイテムも更新しますか？</value></data>
+<data name="PreviewTextEmptyDefault" xml:space="preserve"><value>プレビュー文字（空で既定: {0}）</value></data>
+<data name="PreviewTextDefault" xml:space="preserve"><value>プレビュー文字（既定: {0}）</value></data>
+<data name="SelectOneTextItemToSplit" xml:space="preserve"><value>分割するテキストアイテムを1つだけ選択してください。</value></data>
+<data name="SplitNoTimeline" xml:space="preserve"><value>分割できませんでした。タイムラインが見つかりません。</value></data>
+<data name="ApplyRangeNoTimeline" xml:space="preserve"><value>選択範囲に適用できませんでした。タイムラインが見つかりません。</value></data>
+<data name="Edit" xml:space="preserve"><value>編集</value></data>
+<data name="MergePresets" xml:space="preserve"><value>1つのプリセットにまとめる</value></data>
+<data name="EditCategoryName" xml:space="preserve"><value>カテゴリ名を編集</value></data>
+<data name="MoveForward" xml:space="preserve"><value>順番を前へ</value></data>
+<data name="MoveBackward" xml:space="preserve"><value>順番を後ろへ</value></data>
+<data name="EditTags" xml:space="preserve"><value>タグを編集</value></data>
+<data name="MoveToFolder" xml:space="preserve"><value>フォルダへ移動</value></data>
+<data name="Delete" xml:space="preserve"><value>削除</value></data>
+<data name="Open" xml:space="preserve"><value>開く</value></data>
+<data name="RenameFolder" xml:space="preserve"><value>フォルダ名を変更</value></data>
+<data name="ApplyToSelected" xml:space="preserve"><value>選択中のアイテムに適用</value></data>
+<data name="Apply" xml:space="preserve"><value>適用</value></data>
+<data name="Rename" xml:space="preserve"><value>名前を変更</value></data>
+<data name="SetCategory" xml:space="preserve"><value>カテゴリを設定</value></data>
+<data name="ShowFullCanvas" xml:space="preserve"><value>画面全体で表示</value></data>
+<data name="SetInputFields" xml:space="preserve"><value>入力項目を設定</value></data>
+<data name="RegisterAsTextPreset" xml:space="preserve"><value>テキストプリセットに登録</value></data>
+<data name="PreviewOnly" xml:space="preserve"><value>プレビューのみ表示</value></data>
+<data name="NewFolder" xml:space="preserve"><value>新しいフォルダ</value></data>
+<data name="ChangeDefaultPreviewText" xml:space="preserve"><value>既定のプレビュー文字を変更</value></data>
+<data name="DefaultPreviewText" xml:space="preserve"><value>既定のプレビュー文字</value></data>
+<data name="Fonts" xml:space="preserve"><value>フォント</value></data>
+<data name="FavoritesOnly" xml:space="preserve"><value>お気に入りのみ</value></data>
+<data name="JapaneseFontsOnly" xml:space="preserve"><value>日本語を表示できるフォントのみ</value></data>
+<data name="Japanese" xml:space="preserve"><value>日本語</value></data>
+<data name="SerifToolTip" xml:space="preserve"><value>明朝・セリフ系（名前で判定）</value></data>
+<data name="Serif" xml:space="preserve"><value>明朝</value></data>
+<data name="SansToolTip" xml:space="preserve"><value>ゴシック・サンセリフ系（名前で判定）</value></data>
+<data name="Sans" xml:space="preserve"><value>ゴシック</value></data>
+<data name="CheckingJapaneseFonts" xml:space="preserve"><value>日本語フォントを調べています…</value></data>
+<data name="Effects" xml:space="preserve"><value>エフェクト</value></data>
+<data name="VideoEffects" xml:space="preserve"><value>映像エフェクト</value></data>
+<data name="AddVideoEffectTemplateToolTip" xml:space="preserve"><value>選択中のアイテムのエフェクトを追加</value></data>
+<data name="SelectPreviewImage" xml:space="preserve"><value>プレビュー画像を選択</value></data>
+<data name="ResetImage" xml:space="preserve"><value>既定の画像に戻す</value></data>
+<data name="AudioEffects" xml:space="preserve"><value>音声エフェクト</value></data>
+<data name="AddAudioEffectTemplateToolTip" xml:space="preserve"><value>選択中のアイテムの音声エフェクトを追加</value></data>
+<data name="SelectPreviewAudio" xml:space="preserve"><value>プレビューに使う音声を選択</value></data>
+<data name="ResetAudio" xml:space="preserve"><value>既定の音声に戻す</value></data>
+<data name="CreateRuleImage" xml:space="preserve"><value>ルール画像を作成</value></data>
+<data name="EditRuleImage" xml:space="preserve"><value>ルール画像を編集</value></data>
+<data name="OpenSaveFolder" xml:space="preserve"><value>保存先のフォルダを開く</value></data>
+<data name="SelectBeforeImage" xml:space="preserve"><value>切り替え前の画像を選択</value></data>
+<data name="SelectAfterImage" xml:space="preserve"><value>切り替え後の画像を選択</value></data>
+<data name="Tachie" xml:space="preserve"><value>立ち絵</value></data>
+<data name="Character" xml:space="preserve"><value>キャラクター</value></data>
+<data name="SaveTachieFromSelected" xml:space="preserve"><value>選択中のアイテムの表情・立ち絵を保存</value></data>
+<data name="SaveEditingAsNewFace" xml:space="preserve"><value>編集中の表情を新しい表情として保存</value></data>
+<data name="OverwriteEditingFace" xml:space="preserve"><value>選んでいる表情を編集中の内容で上書き保存</value></data>
+<data name="NoTachie" xml:space="preserve"><value>このキャラクターには立ち絵が設定されていません</value></data>
+<data name="Templates" xml:space="preserve"><value>テンプレート</value></data>
+<data name="RestoreFromBackup" xml:space="preserve"><value>バックアップから復元</value></data>
+<data name="RestoreEllipsis" xml:space="preserve"><value>復元...</value></data>
+<data name="Shape" xml:space="preserve"><value>形</value></data>
+<data name="Angle" xml:space="preserve"><value>角度</value></data>
+<data name="Divisions" xml:space="preserve"><value>分割数</value></data>
+<data name="Noise" xml:space="preserve"><value>ノイズ</value></data>
+<data name="Seed" xml:space="preserve"><value>シード</value></data>
+<data name="Invert" xml:space="preserve"><value>反転</value></data>
+<data name="Save" xml:space="preserve"><value>保存</value></data>
+<data name="Search" xml:space="preserve"><value>検索</value></data>
+<data name="TemplateFieldsHelp" xml:space="preserve"><value>チェックした項目は、テンプレートを追加するときに入力できます。右の欄は入力画面に表示する名前です。</value></data>
+<data name="RestoreTemplates" xml:space="preserve"><value>テンプレートの復元</value></data>
+<data name="RestoreTemplatesHelp" xml:space="preserve"><value>復元するテンプレートを選んでください。同じ名前のテンプレートは置き換えられます。</value></data>
+<data name="Restore" xml:space="preserve"><value>復元</value></data>
+<data name="Interval" xml:space="preserve"><value>間隔</value></data>
+<data name="SplitIntervalToolTip" xml:space="preserve"><value>分けたアイテムの開始を、1つごとに何フレームずつ遅らせるか</value></data>
+<data name="AddBoundaryToolTip" xml:space="preserve"><value>選んだ範囲の前後、またはカーソルの位置で区切る（Enter）</value></data>
+<data name="RemoveBoundaryToolTip" xml:space="preserve"><value>選んだ範囲の中、またはカーソルの位置の区切りを消す（Delete）</value></data>
+<data name="ClearBoundariesToolTip" xml:space="preserve"><value>区切りをすべて消す</value></data>
+<data name="Split" xml:space="preserve"><value>分割</value></data>
+<data name="PartFont" xml:space="preserve"><value>フォントのみ適用</value></data>
+<data name="PartFontSize" xml:space="preserve"><value>サイズのみ適用</value></data>
+<data name="PartColor" xml:space="preserve"><value>文字色のみ適用</value></data>
+<data name="PartDecoration" xml:space="preserve"><value>装飾のみ適用</value></data>
+<data name="PartFormat" xml:space="preserve"><value>書式のみ適用</value></data>
+<data name="PartLayout" xml:space="preserve"><value>配置のみ適用</value></data>
+<data name="PartAnimation" xml:space="preserve"><value>表示アニメーションのみ適用</value></data>
+<data name="PartEffects" xml:space="preserve"><value>エフェクトのみ適用</value></data>
+<data name="DropFailed" xml:space="preserve"><value>ドロップしたものを追加できませんでした。</value></data>
+<data name="PreviewVolume" xml:space="preserve"><value>プレビューの音量: {0}%</value></data>
+<data name="EffectTemplateSource" xml:space="preserve"><value>エフェクトテンプレート</value></data>
+<data name="Other" xml:space="preserve"><value>その他</value></data>
+<data name="DefaultCategory" xml:space="preserve"><value>デフォルト / {0}</value></data>
+<data name="AudioFileFilter" xml:space="preserve"><value>音声ファイル|*.wav;*.mp3;*.m4a;*.aac;*.wma;*.flac;*.ogg|すべてのファイル|*.*</value></data>
+<data name="ImageFileFilter" xml:space="preserve"><value>画像ファイル|*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.webp;*.tif;*.tiff|すべてのファイル|*.*</value></data>
+<data name="AddAudioEffectTemplate" xml:space="preserve"><value>音声エフェクトテンプレートを追加</value></data>
+<data name="EditAudioEffectTemplate" xml:space="preserve"><value>音声エフェクトテンプレートを編集</value></data>
+<data name="TemplateName" xml:space="preserve"><value>テンプレート名</value></data>
+<data name="ConfirmDelete" xml:space="preserve"><value>「{0}」を削除しますか？</value></data>
+<data name="ConfirmDeleteCount" xml:space="preserve"><value>{0} 件を削除しますか？</value></data>
+<data name="CategoryClearable" xml:space="preserve"><value>カテゴリ（空で解除）</value></data>
+<data name="Category" xml:space="preserve"><value>カテゴリ</value></data>
+<data name="CategoryName" xml:space="preserve"><value>カテゴリ名</value></data>
+<data name="EditPreset" xml:space="preserve"><value>プリセットを編集</value></data>
+<data name="CategoryExists" xml:space="preserve"><value>「{0}」というカテゴリはすでにあります。</value></data>
+<data name="ConfirmDeleteFolder" xml:space="preserve"><value>フォルダ「{0}」を削除しますか？</value></data>
+<data name="DeleteFolderNote" xml:space="preserve"><value>フォルダの中のプリセットは1つ上のフォルダに移動します。</value></data>
+<data name="FolderName" xml:space="preserve"><value>フォルダ名</value></data>
+<data name="FolderExists" xml:space="preserve"><value>「{0}」というフォルダはすでにあります。</value></data>
+<data name="Folder" xml:space="preserve"><value>フォルダ</value></data>
+<data name="AddFailed" xml:space="preserve"><value>「{0}」を追加できませんでした。</value></data>
+<data name="LoadFailed" xml:space="preserve"><value>「{0}」を読み込めませんでした。</value></data>
+<data name="TemplateHasNoTextItems" xml:space="preserve"><value>このテンプレートにはテキストアイテムがありません。</value></data>
+<data name="TemplatesNotLoaded" xml:space="preserve"><value>{0} 件のテンプレートを YMM4 が読み込めていません。プラグインを確認してから復元してください。</value></data>
+<data name="TemplatesLost" xml:space="preserve"><value>前回の起動時から {0} 件のテンプレートがなくなっています。削除した覚えがなければ復元できます。</value></data>
+<data name="TemplatesHidden" xml:space="preserve"><value>名前が空のため YMM4 のメニューに表示されないテンプレートが {0} 件あります。</value></data>
+<data name="NoRestorableTemplates" xml:space="preserve"><value>復元できるテンプレートはありません。</value></data>
+<data name="AddEffectTemplate" xml:space="preserve"><value>エフェクトテンプレートを追加</value></data>
+<data name="EditEffectTemplate" xml:space="preserve"><value>エフェクトテンプレートを編集</value></data>
+<data name="ShapeLinear" xml:space="preserve"><value>直線</value></data>
+<data name="ShapeRadial" xml:space="preserve"><value>円</value></data>
+<data name="ShapeRectangle" xml:space="preserve"><value>四角</value></data>
+<data name="ShapeDiamond" xml:space="preserve"><value>ひし形</value></data>
+<data name="ShapeClock" xml:space="preserve"><value>時計回り</value></data>
+<data name="ShapeBlinds" xml:space="preserve"><value>ブラインド</value></data>
+<data name="ShapeChecker" xml:space="preserve"><value>市松</value></data>
+<data name="ShapeRings" xml:space="preserve"><value>波紋</value></data>
+<data name="ShapeSpiral" xml:space="preserve"><value>渦巻き</value></data>
+<data name="ShapeRandom" xml:space="preserve"><value>ランダム</value></data>
+<data name="NewRuleImage" xml:space="preserve"><value>新しいルール画像</value></data>
+<data name="RuleImageSaveFailed" xml:space="preserve"><value>ルール画像を保存できませんでした。</value></data>
+<data name="RuleImage" xml:space="preserve"><value>ルール画像</value></data>
+<data name="ConfirmDeleteRuleImages" xml:space="preserve"><value>{0} 件のルール画像を削除しますか？</value></data>
+<data name="RuleImageDeleteNote" xml:space="preserve"><value>使っているプロジェクトでは画像が見つからなくなります。</value></data>
+<data name="SaveAsNewFace" xml:space="preserve"><value>新しい表情として保存</value></data>
+<data name="DefaultFace" xml:space="preserve"><value>既定の表情</value></data>
+<data name="SaveTachieItem" xml:space="preserve"><value>立ち絵アイテムを保存</value></data>
+<data name="SaveFace" xml:space="preserve"><value>表情を保存</value></data>
+<data name="TagsPlaceholder" xml:space="preserve"><value>タグ（スペース区切り）</value></data>
+<data name="TemplateFieldDescription" xml:space="preserve"><value>テキスト{0}「{1}」の{2}</value></data>
+<data name="SplitModeBoundaries" xml:space="preserve"><value>区切り位置で分割</value></data>
+<data name="SplitModeCharacter" xml:space="preserve"><value>1文字ずつ</value></data>
+<data name="SplitModeLine" xml:space="preserve"><value>1行ずつ</value></data>
+<data name="SplitSummary" xml:space="preserve"><value>{0} 個のアイテムに分割します</value></data>
+<data name="SplitAddBoundaryHint" xml:space="preserve"><value>区切り位置を追加してください</value></data>
+</root>

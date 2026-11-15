@@ -1,0 +1,131 @@
+<Window x:Class="PresetStudio.View.NameInputWindow"
+        x:ClassModifier="internal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:loc="clr-namespace:YukkuriMovieMaker.Resources.Localization;assembly=YukkuriMovieMaker.Plugin"
+        Width="300"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+        Foreground="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}">
+    <Window.Style>
+        <Style TargetType="Window" BasedOn="{StaticResource {x:Type Window}}" />
+    </Window.Style>
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+
+        <Style x:Key="PlaceHolderStyle" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="6,0,0,0" />
+            <Setter Property="IsHitTestVisible" Value="False" />
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+            <Setter Property="Visibility" Value="Collapsed" />
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="26" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="26" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="CategoryHost"
+              Grid.Column="0"
+              Width="140"
+              Visibility="{Binding IsCategoryEditable, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <ComboBox x:Name="CategoryBox"
+                      IsEditable="True"
+                      VerticalContentAlignment="Center"
+                      Visibility="{Binding HasCategorySuggestions, Converter={StaticResource BooleanToVisibilityConverter}}"
+                      ItemsSource="{Binding Categorys}"
+                      Text="{Binding Category, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox x:Name="CategoryTextBox"
+                     VerticalContentAlignment="Center"
+                     Visibility="{Binding UsesCategoryTextBox, Converter={StaticResource BooleanToVisibilityConverter}}"
+                     Text="{Binding Category, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="{Binding CategoryPlaceHolder}">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock" BasedOn="{StaticResource PlaceHolderStyle}">
+                        <Style.Triggers>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding Category}" Value="" />
+                                    <Condition Binding="{Binding IsKeyboardFocusWithin, ElementName=CategoryHost}" Value="False" />
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Visibility" Value="Visible" />
+                            </MultiDataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </Grid>
+
+        <Grid x:Name="NameHost" Grid.Column="1">
+            <ComboBox x:Name="NameBox"
+                      IsEditable="True"
+                      VerticalContentAlignment="Center"
+                      Visibility="{Binding HasNameSuggestions, Converter={StaticResource BooleanToVisibilityConverter}}"
+                      ItemsSource="{Binding Names}"
+                      Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox x:Name="NameTextBox"
+                     VerticalContentAlignment="Center"
+                     Visibility="{Binding UsesNameTextBox, Converter={StaticResource BooleanToVisibilityConverter}}"
+                     Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="{Binding PlaceHolder}">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock" BasedOn="{StaticResource PlaceHolderStyle}">
+                        <Style.Triggers>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding Name}" Value="" />
+                                    <Condition Binding="{Binding IsKeyboardFocusWithin, ElementName=NameHost}" Value="False" />
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Visibility" Value="Visible" />
+                            </MultiDataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </Grid>
+
+        <Grid Grid.Row="1"
+              Grid.ColumnSpan="2"
+              Height="26"
+              Visibility="{Binding IsPreviewTextEditable, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <TextBox x:Name="PreviewTextBox"
+                     VerticalContentAlignment="Center"
+                     Text="{Binding PreviewText, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="{Binding PreviewTextPlaceHolder}">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock" BasedOn="{StaticResource PlaceHolderStyle}">
+                        <Style.Triggers>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding Text, ElementName=PreviewTextBox}" Value="" />
+                                    <Condition Binding="{Binding IsKeyboardFocusWithin, ElementName=PreviewTextBox}" Value="False" />
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Visibility" Value="Visible" />
+                            </MultiDataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </Grid>
+
+        <Button Grid.Row="2"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Right"
+                Width="100"
+                Content="{x:Static loc:Texts.OKButtonContent}"
+                IsEnabled="{Binding CanSubmit}"
+                Click="OkButton_Click" />
+    </Grid>
+</Window>

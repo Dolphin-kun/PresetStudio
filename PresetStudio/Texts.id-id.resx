@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>id-id</value></data>
+<data name="PluginName" xml:space="preserve"><value>Studio Preset</value></data>
+<data name="Unnamed" xml:space="preserve"><value>(Tanpa nama)</value></data>
+<data name="NoEffects" xml:space="preserve"><value>(Tanpa efek)</value></data>
+<data name="None" xml:space="preserve"><value>Tidak ada</value></data>
+<data name="Preset" xml:space="preserve"><value>Preset</value></data>
+<data name="Uncategorized" xml:space="preserve"><value>Tanpa kategori</value></data>
+<data name="CopyName" xml:space="preserve"><value>Salinan {0}</value></data>
+<data name="CopyNameNumbered" xml:space="preserve"><value>Salinan {0} ({1})</value></data>
+<data name="ConfirmOverwrite" xml:space="preserve"><value>Timpa "{0}"?</value></data>
+<data name="BackupCurrentItems" xml:space="preserve"><value>Saat ini {0} item</value></data>
+<data name="BackupCurrentNone" xml:space="preserve"><value>Saat ini tidak ada</value></data>
+<data name="BackupDescription" xml:space="preserve"><value>Cadangan {0} / {1} item / {2}</value></data>
+<data name="BackupMissingPlugins" xml:space="preserve"><value>Tidak dapat dipulihkan karena ada plugin yang belum dimuat: {0}</value></data>
+<data name="User" xml:space="preserve"><value>Pengguna</value></data>
+<data name="FaceGroup" xml:space="preserve"><value>Ekspresi</value></data>
+<data name="TachieItemGroup" xml:space="preserve"><value>Item karakter</value></data>
+<data name="FontColor" xml:space="preserve"><value>Warna teks</value></data>
+<data name="StyleColor" xml:space="preserve"><value>Warna dekorasi</value></data>
+<data name="Text" xml:space="preserve"><value>Teks</value></data>
+<data name="SplitChanged" xml:space="preserve"><value>Item berubah saat dipisah, jadi dibatalkan.</value></data>
+<data name="SplitFailed" xml:space="preserve"><value>Tidak dapat memisah karena posisi karakter tidak dapat dihitung.</value></data>
+<data name="NewPreset" xml:space="preserve"><value>Preset baru</value></data>
+<data name="FolderLabel" xml:space="preserve"><value>Folder: {0}</value></data>
+<data name="Transitions" xml:space="preserve"><value>Transisi</value></data>
+<data name="TransitionGroup" xml:space="preserve"><value>Transisi / {0}</value></data>
+<data name="ApplyPartially" xml:space="preserve"><value>Terapkan sebagian</value></data>
+<data name="OverwriteWithSelected" xml:space="preserve"><value>Timpa dengan item terpilih</value></data>
+<data name="ChangePreviewText" xml:space="preserve"><value>Ubah teks pratinjau</value></data>
+<data name="Duplicate" xml:space="preserve"><value>Duplikat</value></data>
+<data name="Add" xml:space="preserve"><value>Tambah</value></data>
+<data name="ShowFolders" xml:space="preserve"><value>Tampilkan folder</value></data>
+<data name="HideFolders" xml:space="preserve"><value>Sembunyikan folder</value></data>
+<data name="KeepFont" xml:space="preserve"><value>Kunci font</value></data>
+<data name="KeepFontSize" xml:space="preserve"><value>Kunci ukuran</value></data>
+<data name="SplitText" xml:space="preserve"><value>Pisahkan teks</value></data>
+<data name="UpFolder" xml:space="preserve"><value>Naik satu folder (saat ini: {0})</value></data>
+<data name="TopFolder" xml:space="preserve"><value>Teratas</value></data>
+<data name="AddPreset" xml:space="preserve"><value>Tambah preset</value></data>
+<data name="AddPresets" xml:space="preserve"><value>Tambah preset ({0})</value></data>
+<data name="NameLabel" xml:space="preserve"><value>Nama</value></data>
+<data name="ConfirmOverwriteWithSelected" xml:space="preserve"><value>Timpa "{0}" dengan item terpilih?</value></data>
+<data name="ConfirmUpdateLinked" xml:space="preserve"><value>Perbarui juga {1} item yang tertaut ke "{0}"?</value></data>
+<data name="PreviewTextEmptyDefault" xml:space="preserve"><value>Teks pratinjau (kosongkan untuk bawaan: {0})</value></data>
+<data name="PreviewTextDefault" xml:space="preserve"><value>Teks pratinjau (bawaan: {0})</value></data>
+<data name="SelectOneTextItemToSplit" xml:space="preserve"><value>Pilih tepat satu item teks untuk dipisah.</value></data>
+<data name="SplitNoTimeline" xml:space="preserve"><value>Tidak dapat memisah. Timeline tidak ditemukan.</value></data>
+<data name="ApplyRangeNoTimeline" xml:space="preserve"><value>Tidak dapat diterapkan ke pilihan. Timeline tidak ditemukan.</value></data>
+<data name="Edit" xml:space="preserve"><value>Edit</value></data>
+<data name="MergePresets" xml:space="preserve"><value>Gabungkan menjadi satu preset</value></data>
+<data name="EditCategoryName" xml:space="preserve"><value>Edit nama kategori</value></data>
+<data name="MoveForward" xml:space="preserve"><value>Pindah ke depan</value></data>
+<data name="MoveBackward" xml:space="preserve"><value>Pindah ke belakang</value></data>
+<data name="EditTags" xml:space="preserve"><value>Edit tag</value></data>
+<data name="MoveToFolder" xml:space="preserve"><value>Pindah ke folder</value></data>
+<data name="Delete" xml:space="preserve"><value>Hapus</value></data>
+<data name="Open" xml:space="preserve"><value>Buka</value></data>
+<data name="RenameFolder" xml:space="preserve"><value>Ganti nama folder</value></data>
+<data name="ApplyToSelected" xml:space="preserve"><value>Terapkan ke item terpilih</value></data>
+<data name="Apply" xml:space="preserve"><value>Terapkan</value></data>
+<data name="Rename" xml:space="preserve"><value>Ganti nama</value></data>
+<data name="SetCategory" xml:space="preserve"><value>Atur kategori</value></data>
+<data name="ShowFullCanvas" xml:space="preserve"><value>Tampilkan di seluruh kanvas</value></data>
+<data name="SetInputFields" xml:space="preserve"><value>Atur kolom input</value></data>
+<data name="RegisterAsTextPreset" xml:space="preserve"><value>Daftarkan sebagai preset teks</value></data>
+<data name="PreviewOnly" xml:space="preserve"><value>Tampilkan pratinjau saja</value></data>
+<data name="NewFolder" xml:space="preserve"><value>Folder baru</value></data>
+<data name="ChangeDefaultPreviewText" xml:space="preserve"><value>Ubah teks pratinjau bawaan</value></data>
+<data name="DefaultPreviewText" xml:space="preserve"><value>Teks pratinjau bawaan</value></data>
+<data name="Fonts" xml:space="preserve"><value>Font</value></data>
+<data name="FavoritesOnly" xml:space="preserve"><value>Hanya favorit</value></data>
+<data name="JapaneseFontsOnly" xml:space="preserve"><value>Hanya font yang dapat menampilkan bahasa Jepang</value></data>
+<data name="Japanese" xml:space="preserve"><value>Jepang</value></data>
+<data name="SerifToolTip" xml:space="preserve"><value>Mincho / serif (berdasarkan nama)</value></data>
+<data name="Serif" xml:space="preserve"><value>Serif</value></data>
+<data name="SansToolTip" xml:space="preserve"><value>Gothic / sans-serif (berdasarkan nama)</value></data>
+<data name="Sans" xml:space="preserve"><value>Sans</value></data>
+<data name="CheckingJapaneseFonts" xml:space="preserve"><value>Memeriksa font Jepang…</value></data>
+<data name="Effects" xml:space="preserve"><value>Efek</value></data>
+<data name="VideoEffects" xml:space="preserve"><value>Efek video</value></data>
+<data name="AddVideoEffectTemplateToolTip" xml:space="preserve"><value>Tambahkan efek dari item terpilih</value></data>
+<data name="SelectPreviewImage" xml:space="preserve"><value>Pilih gambar pratinjau</value></data>
+<data name="ResetImage" xml:space="preserve"><value>Kembalikan ke gambar bawaan</value></data>
+<data name="AudioEffects" xml:space="preserve"><value>Efek audio</value></data>
+<data name="AddAudioEffectTemplateToolTip" xml:space="preserve"><value>Tambahkan efek audio dari item terpilih</value></data>
+<data name="SelectPreviewAudio" xml:space="preserve"><value>Pilih audio untuk pratinjau</value></data>
+<data name="ResetAudio" xml:space="preserve"><value>Kembalikan ke audio bawaan</value></data>
+<data name="CreateRuleImage" xml:space="preserve"><value>Buat gambar aturan</value></data>
+<data name="EditRuleImage" xml:space="preserve"><value>Edit gambar aturan</value></data>
+<data name="OpenSaveFolder" xml:space="preserve"><value>Buka folder penyimpanan</value></data>
+<data name="SelectBeforeImage" xml:space="preserve"><value>Pilih gambar sebelum transisi</value></data>
+<data name="SelectAfterImage" xml:space="preserve"><value>Pilih gambar setelah transisi</value></data>
+<data name="Tachie" xml:space="preserve"><value>Karakter</value></data>
+<data name="Character" xml:space="preserve"><value>Karakter</value></data>
+<data name="SaveTachieFromSelected" xml:space="preserve"><value>Simpan ekspresi atau karakter dari item terpilih</value></data>
+<data name="SaveEditingAsNewFace" xml:space="preserve"><value>Simpan ekspresi yang diedit sebagai ekspresi baru</value></data>
+<data name="OverwriteEditingFace" xml:space="preserve"><value>Timpa ekspresi terpilih dengan hasil edit</value></data>
+<data name="NoTachie" xml:space="preserve"><value>Karakter ini tidak memiliki gambar</value></data>
+<data name="Templates" xml:space="preserve"><value>Templat</value></data>
+<data name="RestoreFromBackup" xml:space="preserve"><value>Pulihkan dari cadangan</value></data>
+<data name="RestoreEllipsis" xml:space="preserve"><value>Pulihkan...</value></data>
+<data name="Shape" xml:space="preserve"><value>Bentuk</value></data>
+<data name="Angle" xml:space="preserve"><value>Sudut</value></data>
+<data name="Divisions" xml:space="preserve"><value>Jumlah bagian</value></data>
+<data name="Noise" xml:space="preserve"><value>Derau</value></data>
+<data name="Seed" xml:space="preserve"><value>Seed</value></data>
+<data name="Invert" xml:space="preserve"><value>Balik</value></data>
+<data name="Save" xml:space="preserve"><value>Simpan</value></data>
+<data name="Search" xml:space="preserve"><value>Cari</value></data>
+<data name="TemplateFieldsHelp" xml:space="preserve"><value>Kolom yang dicentang dapat diisi saat menambahkan templat. Kolom kanan adalah nama yang ditampilkan di dialog input.</value></data>
+<data name="RestoreTemplates" xml:space="preserve"><value>Pulihkan templat</value></data>
+<data name="RestoreTemplatesHelp" xml:space="preserve"><value>Pilih templat yang akan dipulihkan. Templat dengan nama yang sama akan diganti.</value></data>
+<data name="Restore" xml:space="preserve"><value>Pulihkan</value></data>
+<data name="Interval" xml:space="preserve"><value>Interval</value></data>
+<data name="SplitIntervalToolTip" xml:space="preserve"><value>Berapa frame untuk menunda awal setiap item hasil pisah</value></data>
+<data name="AddBoundaryToolTip" xml:space="preserve"><value>Pisahkan sebelum dan sesudah pilihan, atau di kursor (Enter)</value></data>
+<data name="RemoveBoundaryToolTip" xml:space="preserve"><value>Hapus penanda pisah di pilihan atau di kursor (Delete)</value></data>
+<data name="ClearBoundariesToolTip" xml:space="preserve"><value>Hapus semua penanda pisah</value></data>
+<data name="Split" xml:space="preserve"><value>Pisahkan</value></data>
+<data name="PartFont" xml:space="preserve"><value>Terapkan font saja</value></data>
+<data name="PartFontSize" xml:space="preserve"><value>Terapkan ukuran saja</value></data>
+<data name="PartColor" xml:space="preserve"><value>Terapkan warna teks saja</value></data>
+<data name="PartDecoration" xml:space="preserve"><value>Terapkan dekorasi saja</value></data>
+<data name="PartFormat" xml:space="preserve"><value>Terapkan format saja</value></data>
+<data name="PartLayout" xml:space="preserve"><value>Terapkan tata letak saja</value></data>
+<data name="PartAnimation" xml:space="preserve"><value>Terapkan animasi tampilan saja</value></data>
+<data name="PartEffects" xml:space="preserve"><value>Terapkan efek saja</value></data>
+<data name="DropFailed" xml:space="preserve"><value>Tidak dapat menambahkan item yang dilepas.</value></data>
+<data name="PreviewVolume" xml:space="preserve"><value>Volume pratinjau: {0}%</value></data>
+<data name="EffectTemplateSource" xml:space="preserve"><value>Templat efek</value></data>
+<data name="Other" xml:space="preserve"><value>Lainnya</value></data>
+<data name="DefaultCategory" xml:space="preserve"><value>Bawaan / {0}</value></data>
+<data name="AudioFileFilter" xml:space="preserve"><value>File audio|*.wav;*.mp3;*.m4a;*.aac;*.wma;*.flac;*.ogg|Semua file|*.*</value></data>
+<data name="ImageFileFilter" xml:space="preserve"><value>File gambar|*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.webp;*.tif;*.tiff|Semua file|*.*</value></data>
+<data name="AddAudioEffectTemplate" xml:space="preserve"><value>Tambah templat efek audio</value></data>
+<data name="EditAudioEffectTemplate" xml:space="preserve"><value>Edit templat efek audio</value></data>
+<data name="TemplateName" xml:space="preserve"><value>Nama templat</value></data>
+<data name="ConfirmDelete" xml:space="preserve"><value>Hapus "{0}"?</value></data>
+<data name="ConfirmDeleteCount" xml:space="preserve"><value>Hapus {0} item?</value></data>
+<data name="CategoryClearable" xml:space="preserve"><value>Kategori (kosongkan untuk menghapus)</value></data>
+<data name="Category" xml:space="preserve"><value>Kategori</value></data>
+<data name="CategoryName" xml:space="preserve"><value>Nama kategori</value></data>
+<data name="EditPreset" xml:space="preserve"><value>Edit preset</value></data>
+<data name="CategoryExists" xml:space="preserve"><value>Kategori "{0}" sudah ada.</value></data>
+<data name="ConfirmDeleteFolder" xml:space="preserve"><value>Hapus folder "{0}"?</value></data>
+<data name="DeleteFolderNote" xml:space="preserve"><value>Preset di dalam folder akan dipindahkan naik satu folder.</value></data>
+<data name="FolderName" xml:space="preserve"><value>Nama folder</value></data>
+<data name="FolderExists" xml:space="preserve"><value>Folder "{0}" sudah ada.</value></data>
+<data name="Folder" xml:space="preserve"><value>Folder</value></data>
+<data name="AddFailed" xml:space="preserve"><value>Tidak dapat menambahkan "{0}".</value></data>
+<data name="LoadFailed" xml:space="preserve"><value>Tidak dapat memuat "{0}".</value></data>
+<data name="TemplateHasNoTextItems" xml:space="preserve"><value>Templat ini tidak memiliki item teks.</value></data>
+<data name="TemplatesNotLoaded" xml:space="preserve"><value>YMM4 tidak dapat memuat {0} templat. Periksa plugin sebelum memulihkannya.</value></data>
+<data name="TemplatesLost" xml:space="preserve"><value>{0} templat hilang sejak peluncuran terakhir. Jika Anda tidak menghapusnya, Anda dapat memulihkannya.</value></data>
+<data name="TemplatesHidden" xml:space="preserve"><value>Ada {0} templat tanpa nama yang tidak muncul di menu YMM4.</value></data>
+<data name="NoRestorableTemplates" xml:space="preserve"><value>Tidak ada templat yang dapat dipulihkan.</value></data>
+<data name="AddEffectTemplate" xml:space="preserve"><value>Tambah templat efek</value></data>
+<data name="EditEffectTemplate" xml:space="preserve"><value>Edit templat efek</value></data>
+<data name="ShapeLinear" xml:space="preserve"><value>Linear</value></data>
+<data name="ShapeRadial" xml:space="preserve"><value>Lingkaran</value></data>
+<data name="ShapeRectangle" xml:space="preserve"><value>Persegi</value></data>
+<data name="ShapeDiamond" xml:space="preserve"><value>Belah ketupat</value></data>
+<data name="ShapeClock" xml:space="preserve"><value>Searah jarum jam</value></data>
+<data name="ShapeBlinds" xml:space="preserve"><value>Tirai</value></data>
+<data name="ShapeChecker" xml:space="preserve"><value>Kotak-kotak</value></data>
+<data name="ShapeRings" xml:space="preserve"><value>Riak</value></data>
+<data name="ShapeSpiral" xml:space="preserve"><value>Spiral</value></data>
+<data name="ShapeRandom" xml:space="preserve"><value>Acak</value></data>
+<data name="NewRuleImage" xml:space="preserve"><value>Gambar aturan baru</value></data>
+<data name="RuleImageSaveFailed" xml:space="preserve"><value>Tidak dapat menyimpan gambar aturan.</value></data>
+<data name="RuleImage" xml:space="preserve"><value>Gambar aturan</value></data>
+<data name="ConfirmDeleteRuleImages" xml:space="preserve"><value>Hapus {0} gambar aturan?</value></data>
+<data name="RuleImageDeleteNote" xml:space="preserve"><value>Proyek yang menggunakannya tidak akan menemukan gambar lagi.</value></data>
+<data name="SaveAsNewFace" xml:space="preserve"><value>Simpan sebagai ekspresi baru</value></data>
+<data name="DefaultFace" xml:space="preserve"><value>Ekspresi bawaan</value></data>
+<data name="SaveTachieItem" xml:space="preserve"><value>Simpan item karakter</value></data>
+<data name="SaveFace" xml:space="preserve"><value>Simpan ekspresi</value></data>
+<data name="TagsPlaceholder" xml:space="preserve"><value>Tag (dipisahkan spasi)</value></data>
+<data name="TemplateFieldDescription" xml:space="preserve"><value>{2} dari teks {0} "{1}"</value></data>
+<data name="SplitModeBoundaries" xml:space="preserve"><value>Pisahkan di penanda</value></data>
+<data name="SplitModeCharacter" xml:space="preserve"><value>Per karakter</value></data>
+<data name="SplitModeLine" xml:space="preserve"><value>Per baris</value></data>
+<data name="SplitSummary" xml:space="preserve"><value>Akan dipisah menjadi {0} item</value></data>
+<data name="SplitAddBoundaryHint" xml:space="preserve"><value>Tambahkan penanda pisah</value></data>
+</root>

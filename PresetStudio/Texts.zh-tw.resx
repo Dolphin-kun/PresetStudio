@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>zh-tw</value></data>
+<data name="PluginName" xml:space="preserve"><value>預設工作室</value></data>
+<data name="Unnamed" xml:space="preserve"><value>(未命名)</value></data>
+<data name="NoEffects" xml:space="preserve"><value>(無效果)</value></data>
+<data name="None" xml:space="preserve"><value>無</value></data>
+<data name="Preset" xml:space="preserve"><value>預設</value></data>
+<data name="Uncategorized" xml:space="preserve"><value>未分類</value></data>
+<data name="CopyName" xml:space="preserve"><value>{0} 的副本</value></data>
+<data name="CopyNameNumbered" xml:space="preserve"><value>{0} 的副本 ({1})</value></data>
+<data name="ConfirmOverwrite" xml:space="preserve"><value>要覆寫「{0}」嗎？</value></data>
+<data name="BackupCurrentItems" xml:space="preserve"><value>目前有 {0} 個項目</value></data>
+<data name="BackupCurrentNone" xml:space="preserve"><value>目前不存在</value></data>
+<data name="BackupDescription" xml:space="preserve"><value>{0} 的備份 / {1} 個項目 / {2}</value></data>
+<data name="BackupMissingPlugins" xml:space="preserve"><value>由於有未載入的外掛，無法還原：{0}</value></data>
+<data name="User" xml:space="preserve"><value>使用者</value></data>
+<data name="FaceGroup" xml:space="preserve"><value>表情</value></data>
+<data name="TachieItemGroup" xml:space="preserve"><value>立繪項目</value></data>
+<data name="FontColor" xml:space="preserve"><value>文字顏色</value></data>
+<data name="StyleColor" xml:space="preserve"><value>裝飾顏色</value></data>
+<data name="Text" xml:space="preserve"><value>文字</value></data>
+<data name="SplitChanged" xml:space="preserve"><value>分割期間項目已被變更，已中止。</value></data>
+<data name="SplitFailed" xml:space="preserve"><value>無法計算文字位置，因此無法分割。</value></data>
+<data name="NewPreset" xml:space="preserve"><value>新預設</value></data>
+<data name="FolderLabel" xml:space="preserve"><value>資料夾：{0}</value></data>
+<data name="Transitions" xml:space="preserve"><value>轉場</value></data>
+<data name="TransitionGroup" xml:space="preserve"><value>轉場 / {0}</value></data>
+<data name="ApplyPartially" xml:space="preserve"><value>部分套用</value></data>
+<data name="OverwriteWithSelected" xml:space="preserve"><value>以選取的項目覆寫</value></data>
+<data name="ChangePreviewText" xml:space="preserve"><value>變更預覽文字</value></data>
+<data name="Duplicate" xml:space="preserve"><value>複製</value></data>
+<data name="Add" xml:space="preserve"><value>新增</value></data>
+<data name="ShowFolders" xml:space="preserve"><value>顯示資料夾</value></data>
+<data name="HideFolders" xml:space="preserve"><value>隱藏資料夾</value></data>
+<data name="KeepFont" xml:space="preserve"><value>固定字型</value></data>
+<data name="KeepFontSize" xml:space="preserve"><value>固定大小</value></data>
+<data name="SplitText" xml:space="preserve"><value>分割文字</value></data>
+<data name="UpFolder" xml:space="preserve"><value>返回上一層資料夾（目前：{0}）</value></data>
+<data name="TopFolder" xml:space="preserve"><value>最上層</value></data>
+<data name="AddPreset" xml:space="preserve"><value>新增預設</value></data>
+<data name="AddPresets" xml:space="preserve"><value>新增預設（{0} 個）</value></data>
+<data name="NameLabel" xml:space="preserve"><value>名稱</value></data>
+<data name="ConfirmOverwriteWithSelected" xml:space="preserve"><value>要以選取的項目覆寫「{0}」嗎？</value></data>
+<data name="ConfirmUpdateLinked" xml:space="preserve"><value>是否同時更新與「{0}」連結的 {1} 個項目？</value></data>
+<data name="PreviewTextEmptyDefault" xml:space="preserve"><value>預覽文字（留空使用預設：{0}）</value></data>
+<data name="PreviewTextDefault" xml:space="preserve"><value>預覽文字（預設：{0}）</value></data>
+<data name="SelectOneTextItemToSplit" xml:space="preserve"><value>請只選取一個要分割的文字項目。</value></data>
+<data name="SplitNoTimeline" xml:space="preserve"><value>無法分割。找不到時間軸。</value></data>
+<data name="ApplyRangeNoTimeline" xml:space="preserve"><value>無法套用至選取範圍。找不到時間軸。</value></data>
+<data name="Edit" xml:space="preserve"><value>編輯</value></data>
+<data name="MergePresets" xml:space="preserve"><value>合併為一個預設</value></data>
+<data name="EditCategoryName" xml:space="preserve"><value>編輯類別名稱</value></data>
+<data name="MoveForward" xml:space="preserve"><value>往前移</value></data>
+<data name="MoveBackward" xml:space="preserve"><value>往後移</value></data>
+<data name="EditTags" xml:space="preserve"><value>編輯標籤</value></data>
+<data name="MoveToFolder" xml:space="preserve"><value>移至資料夾</value></data>
+<data name="Delete" xml:space="preserve"><value>刪除</value></data>
+<data name="Open" xml:space="preserve"><value>開啟</value></data>
+<data name="RenameFolder" xml:space="preserve"><value>重新命名資料夾</value></data>
+<data name="ApplyToSelected" xml:space="preserve"><value>套用至選取的項目</value></data>
+<data name="Apply" xml:space="preserve"><value>套用</value></data>
+<data name="Rename" xml:space="preserve"><value>重新命名</value></data>
+<data name="SetCategory" xml:space="preserve"><value>設定類別</value></data>
+<data name="ShowFullCanvas" xml:space="preserve"><value>以整個畫面顯示</value></data>
+<data name="SetInputFields" xml:space="preserve"><value>設定輸入項目</value></data>
+<data name="RegisterAsTextPreset" xml:space="preserve"><value>登錄為文字預設</value></data>
+<data name="PreviewOnly" xml:space="preserve"><value>僅顯示預覽</value></data>
+<data name="NewFolder" xml:space="preserve"><value>新增資料夾</value></data>
+<data name="ChangeDefaultPreviewText" xml:space="preserve"><value>變更預設預覽文字</value></data>
+<data name="DefaultPreviewText" xml:space="preserve"><value>預設預覽文字</value></data>
+<data name="Fonts" xml:space="preserve"><value>字型</value></data>
+<data name="FavoritesOnly" xml:space="preserve"><value>僅最愛</value></data>
+<data name="JapaneseFontsOnly" xml:space="preserve"><value>僅可顯示日文的字型</value></data>
+<data name="Japanese" xml:space="preserve"><value>日文</value></data>
+<data name="SerifToolTip" xml:space="preserve"><value>明朝 / 襯線體（依名稱判斷）</value></data>
+<data name="Serif" xml:space="preserve"><value>明朝</value></data>
+<data name="SansToolTip" xml:space="preserve"><value>黑體 / 無襯線體（依名稱判斷）</value></data>
+<data name="Sans" xml:space="preserve"><value>黑體</value></data>
+<data name="CheckingJapaneseFonts" xml:space="preserve"><value>正在檢查日文字型…</value></data>
+<data name="Effects" xml:space="preserve"><value>效果</value></data>
+<data name="VideoEffects" xml:space="preserve"><value>影像效果</value></data>
+<data name="AddVideoEffectTemplateToolTip" xml:space="preserve"><value>新增選取項目的效果</value></data>
+<data name="SelectPreviewImage" xml:space="preserve"><value>選擇預覽圖片</value></data>
+<data name="ResetImage" xml:space="preserve"><value>還原為預設圖片</value></data>
+<data name="AudioEffects" xml:space="preserve"><value>音訊效果</value></data>
+<data name="AddAudioEffectTemplateToolTip" xml:space="preserve"><value>新增選取項目的音訊效果</value></data>
+<data name="SelectPreviewAudio" xml:space="preserve"><value>選擇用於預覽的音訊</value></data>
+<data name="ResetAudio" xml:space="preserve"><value>還原為預設音訊</value></data>
+<data name="CreateRuleImage" xml:space="preserve"><value>建立規則圖片</value></data>
+<data name="EditRuleImage" xml:space="preserve"><value>編輯規則圖片</value></data>
+<data name="OpenSaveFolder" xml:space="preserve"><value>開啟儲存資料夾</value></data>
+<data name="SelectBeforeImage" xml:space="preserve"><value>選擇轉場前的圖片</value></data>
+<data name="SelectAfterImage" xml:space="preserve"><value>選擇轉場後的圖片</value></data>
+<data name="Tachie" xml:space="preserve"><value>立繪</value></data>
+<data name="Character" xml:space="preserve"><value>角色</value></data>
+<data name="SaveTachieFromSelected" xml:space="preserve"><value>儲存選取項目的表情或立繪</value></data>
+<data name="SaveEditingAsNewFace" xml:space="preserve"><value>將編輯中的表情另存為新表情</value></data>
+<data name="OverwriteEditingFace" xml:space="preserve"><value>以編輯內容覆寫所選表情</value></data>
+<data name="NoTachie" xml:space="preserve"><value>此角色未設定立繪</value></data>
+<data name="Templates" xml:space="preserve"><value>範本</value></data>
+<data name="RestoreFromBackup" xml:space="preserve"><value>從備份還原</value></data>
+<data name="RestoreEllipsis" xml:space="preserve"><value>還原...</value></data>
+<data name="Shape" xml:space="preserve"><value>形狀</value></data>
+<data name="Angle" xml:space="preserve"><value>角度</value></data>
+<data name="Divisions" xml:space="preserve"><value>分割數</value></data>
+<data name="Noise" xml:space="preserve"><value>雜訊</value></data>
+<data name="Seed" xml:space="preserve"><value>種子</value></data>
+<data name="Invert" xml:space="preserve"><value>反轉</value></data>
+<data name="Save" xml:space="preserve"><value>儲存</value></data>
+<data name="Search" xml:space="preserve"><value>搜尋</value></data>
+<data name="TemplateFieldsHelp" xml:space="preserve"><value>勾選的項目可在新增範本時輸入。右側欄位是輸入畫面中顯示的名稱。</value></data>
+<data name="RestoreTemplates" xml:space="preserve"><value>還原範本</value></data>
+<data name="RestoreTemplatesHelp" xml:space="preserve"><value>請選擇要還原的範本。同名範本將被取代。</value></data>
+<data name="Restore" xml:space="preserve"><value>還原</value></data>
+<data name="Interval" xml:space="preserve"><value>間隔</value></data>
+<data name="SplitIntervalToolTip" xml:space="preserve"><value>每個分割項目的開始依序延遲的影格數</value></data>
+<data name="AddBoundaryToolTip" xml:space="preserve"><value>在選取範圍前後或游標位置分割（Enter）</value></data>
+<data name="RemoveBoundaryToolTip" xml:space="preserve"><value>刪除選取範圍內或游標位置的分割點（Delete）</value></data>
+<data name="ClearBoundariesToolTip" xml:space="preserve"><value>刪除所有分割點</value></data>
+<data name="Split" xml:space="preserve"><value>分割</value></data>
+<data name="PartFont" xml:space="preserve"><value>僅套用字型</value></data>
+<data name="PartFontSize" xml:space="preserve"><value>僅套用大小</value></data>
+<data name="PartColor" xml:space="preserve"><value>僅套用文字顏色</value></data>
+<data name="PartDecoration" xml:space="preserve"><value>僅套用裝飾</value></data>
+<data name="PartFormat" xml:space="preserve"><value>僅套用格式</value></data>
+<data name="PartLayout" xml:space="preserve"><value>僅套用排版</value></data>
+<data name="PartAnimation" xml:space="preserve"><value>僅套用顯示動畫</value></data>
+<data name="PartEffects" xml:space="preserve"><value>僅套用效果</value></data>
+<data name="DropFailed" xml:space="preserve"><value>無法新增拖放的內容。</value></data>
+<data name="PreviewVolume" xml:space="preserve"><value>預覽音量：{0}%</value></data>
+<data name="EffectTemplateSource" xml:space="preserve"><value>效果範本</value></data>
+<data name="Other" xml:space="preserve"><value>其他</value></data>
+<data name="DefaultCategory" xml:space="preserve"><value>預設 / {0}</value></data>
+<data name="AudioFileFilter" xml:space="preserve"><value>音訊檔案|*.wav;*.mp3;*.m4a;*.aac;*.wma;*.flac;*.ogg|所有檔案|*.*</value></data>
+<data name="ImageFileFilter" xml:space="preserve"><value>圖片檔案|*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.webp;*.tif;*.tiff|所有檔案|*.*</value></data>
+<data name="AddAudioEffectTemplate" xml:space="preserve"><value>新增音訊效果範本</value></data>
+<data name="EditAudioEffectTemplate" xml:space="preserve"><value>編輯音訊效果範本</value></data>
+<data name="TemplateName" xml:space="preserve"><value>範本名稱</value></data>
+<data name="ConfirmDelete" xml:space="preserve"><value>要刪除「{0}」嗎？</value></data>
+<data name="ConfirmDeleteCount" xml:space="preserve"><value>要刪除 {0} 項嗎？</value></data>
+<data name="CategoryClearable" xml:space="preserve"><value>類別（留空則清除）</value></data>
+<data name="Category" xml:space="preserve"><value>類別</value></data>
+<data name="CategoryName" xml:space="preserve"><value>類別名稱</value></data>
+<data name="EditPreset" xml:space="preserve"><value>編輯預設</value></data>
+<data name="CategoryExists" xml:space="preserve"><value>類別「{0}」已存在。</value></data>
+<data name="ConfirmDeleteFolder" xml:space="preserve"><value>要刪除資料夾「{0}」嗎？</value></data>
+<data name="DeleteFolderNote" xml:space="preserve"><value>資料夾中的預設將移至上一層資料夾。</value></data>
+<data name="FolderName" xml:space="preserve"><value>資料夾名稱</value></data>
+<data name="FolderExists" xml:space="preserve"><value>資料夾「{0}」已存在。</value></data>
+<data name="Folder" xml:space="preserve"><value>資料夾</value></data>
+<data name="AddFailed" xml:space="preserve"><value>無法新增「{0}」。</value></data>
+<data name="LoadFailed" xml:space="preserve"><value>無法讀取「{0}」。</value></data>
+<data name="TemplateHasNoTextItems" xml:space="preserve"><value>此範本中沒有文字項目。</value></data>
+<data name="TemplatesNotLoaded" xml:space="preserve"><value>YMM4 無法讀取 {0} 個範本。請檢查外掛後再還原。</value></data>
+<data name="TemplatesLost" xml:space="preserve"><value>自上次啟動以來有 {0} 個範本消失了。如果不是您刪除的，可以還原。</value></data>
+<data name="TemplatesHidden" xml:space="preserve"><value>有 {0} 個範本因名稱為空而不顯示在 YMM4 選單中。</value></data>
+<data name="NoRestorableTemplates" xml:space="preserve"><value>沒有可還原的範本。</value></data>
+<data name="AddEffectTemplate" xml:space="preserve"><value>新增效果範本</value></data>
+<data name="EditEffectTemplate" xml:space="preserve"><value>編輯效果範本</value></data>
+<data name="ShapeLinear" xml:space="preserve"><value>直線</value></data>
+<data name="ShapeRadial" xml:space="preserve"><value>圓形</value></data>
+<data name="ShapeRectangle" xml:space="preserve"><value>方形</value></data>
+<data name="ShapeDiamond" xml:space="preserve"><value>菱形</value></data>
+<data name="ShapeClock" xml:space="preserve"><value>順時針</value></data>
+<data name="ShapeBlinds" xml:space="preserve"><value>百葉窗</value></data>
+<data name="ShapeChecker" xml:space="preserve"><value>棋盤格</value></data>
+<data name="ShapeRings" xml:space="preserve"><value>波紋</value></data>
+<data name="ShapeSpiral" xml:space="preserve"><value>螺旋</value></data>
+<data name="ShapeRandom" xml:space="preserve"><value>隨機</value></data>
+<data name="NewRuleImage" xml:space="preserve"><value>新規則圖片</value></data>
+<data name="RuleImageSaveFailed" xml:space="preserve"><value>無法儲存規則圖片。</value></data>
+<data name="RuleImage" xml:space="preserve"><value>規則圖片</value></data>
+<data name="ConfirmDeleteRuleImages" xml:space="preserve"><value>要刪除 {0} 個規則圖片嗎？</value></data>
+<data name="RuleImageDeleteNote" xml:space="preserve"><value>使用這些圖片的專案將找不到圖片。</value></data>
+<data name="SaveAsNewFace" xml:space="preserve"><value>另存為新表情</value></data>
+<data name="DefaultFace" xml:space="preserve"><value>預設表情</value></data>
+<data name="SaveTachieItem" xml:space="preserve"><value>儲存立繪項目</value></data>
+<data name="SaveFace" xml:space="preserve"><value>儲存表情</value></data>
+<data name="TagsPlaceholder" xml:space="preserve"><value>標籤（以空格分隔）</value></data>
+<data name="TemplateFieldDescription" xml:space="preserve"><value>文字{0}「{1}」的{2}</value></data>
+<data name="SplitModeBoundaries" xml:space="preserve"><value>依分割點分割</value></data>
+<data name="SplitModeCharacter" xml:space="preserve"><value>逐字</value></data>
+<data name="SplitModeLine" xml:space="preserve"><value>逐行</value></data>
+<data name="SplitSummary" xml:space="preserve"><value>將分割為 {0} 個項目</value></data>
+<data name="SplitAddBoundaryHint" xml:space="preserve"><value>請新增分割點</value></data>
+</root>
